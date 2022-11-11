@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    width: 100vw;
+}
+
+nav {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(144, 82, 6);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+/* NEW COLLECITON */
+
+.new-collection, .offer {
+    background-color: bisque;
+    width: 28rem;
+    height: 20rem;
+    padding: 3rem;
+}
+.collection img{
+    margin-top: 10rem;
+    width: 100%;
+}
+
+/* NEW RELEASES */
+
+.new-releases {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* nedan kan skrivas ihop om ingen mer kod ska in */
+
+.release-text {
+    width:28rem;
+}
+
+.kaftan img {
+    width:28rem;
+}
+
+.jewelry img , .slippers img {
+    width: 28rem;
+}
+
+/* MOOD */
+
+.mood {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    
+}
+
+.packaging {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28rem;
+    background-color: bisque;
+    padding-top: 3rem;
+}
+
+.packaging img {
+    width:24rem;
+    height:24rem;
+}
+
+footer {
+    width: 100%;
+    background-color: bisque;
+    margin-top: 10rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+}
