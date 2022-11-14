@@ -10,7 +10,25 @@
 
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <ul class="menu">
+          <li><a class="menuItem" href="#">Home</a></li>
+          <li><a class="menuItem" href="#">Profile</a></li>
+          <li><a class="menuItem" href="#">About</a></li>
+          <li><a class="menuItem" href="#">Contacts</a></li>
+        </ul>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <div class="hamburger-lines">
+          <i class="menuIcon material-icons"><span class="line line1"></span></i>
+          <i class="closeIcon material-icons">close</i>
+          
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div> 
+        </button>
+      </nav>
     </header>
     <main>
       <section class="hero">
@@ -125,5 +143,6 @@
         </div>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
