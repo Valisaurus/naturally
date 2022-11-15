@@ -4,7 +4,7 @@
 
 body {
     margin:0;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 nav {
@@ -24,7 +24,7 @@ nav {
 
 .new-collection, .offer {
     background-color: bisque;
-    width: 28rem;
+    /* width: 28rem; */
     height: 20rem;
     padding: 3rem;
 }
@@ -111,14 +111,14 @@ footer {
   .menu {
     position: fixed;
     transform: translateY(-100%);
-    transition: transform 0.2s;
+    transition: transform 0.5s;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: black;
-    color: white;
+    /* background: black; */
+    color: rgb(0, 0, 0);
     list-style: none;
     padding-top: 4rem;
   }
