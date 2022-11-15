@@ -3,10 +3,15 @@
 }
 
 body {
+<<<<<<< HEAD
   margin: 0;
 
   width: 100vw;
   height: 100vh;
+=======
+    margin:0;
+    /* width: 100vw; */
+>>>>>>> 8f433b78169148d9d8105a508995fa92e08bd00b
 }
 
 nav {
@@ -25,12 +30,20 @@ nav {
 }
 /* NEW COLLECITON */
 
+<<<<<<< HEAD
 .new-collection,
 .offer {
   background-color: bisque;
   width: 100%;
   height: 30rem;
   padding: 3rem;
+=======
+.new-collection, .offer {
+    background-color: bisque;
+    /* width: 28rem; */
+    height: 20rem;
+    padding: 3rem;
+>>>>>>> 8f433b78169148d9d8105a508995fa92e08bd00b
 }
 .collection img {
   margin-top: 10rem;
@@ -189,6 +202,7 @@ footer {
     padding: 3rem;
   }
 
+<<<<<<< HEAD
   .mood {
     display: flex;
     flex-direction: row;
@@ -196,6 +210,21 @@ footer {
     width: auto;
     margin-top: 10rem;
     padding: 3rem;
+=======
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    /* background: black; */
+    color: rgb(0, 0, 0);
+    list-style: none;
+    padding-top: 4rem;
+>>>>>>> 8f433b78169148d9d8105a508995fa92e08bd00b
   }
 
   .new-releases {
