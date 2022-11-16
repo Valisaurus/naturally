@@ -3,20 +3,14 @@
 }
 
 body {
-<<<<<<< HEAD
   margin: 0;
-
   width: 100vw;
   height: 100vh;
-=======
-    margin:0;
-    /* width: 100vw; */
->>>>>>> 8f433b78169148d9d8105a508995fa92e08bd00b
 }
 
 nav {
   width: 100%;
-  height: 5vh;
+  height: 4rem;
   background-color: rgb(144, 82, 6);
 }
 
@@ -24,26 +18,18 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+  padding-top: 6rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 /* NEW COLLECITON */
 
-<<<<<<< HEAD
 .new-collection,
 .offer {
   background-color: bisque;
   width: 100%;
-  height: 30rem;
-  padding: 3rem;
-=======
-.new-collection, .offer {
-    background-color: bisque;
-    /* width: 28rem; */
-    height: 20rem;
-    padding: 3rem;
->>>>>>> 8f433b78169148d9d8105a508995fa92e08bd00b
+  height: 26rem;
+  padding: 4rem 5rem 4rem 4rem;
 }
 .collection img {
   margin-top: 10rem;
@@ -104,156 +90,4 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 3rem;
-}
-
-/* HAMBURGER-MENY */
-
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-}
-
-.closeIcon {
-  display: none;
-}
-
-.menu {
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: black;
-  color: white;
-  list-style: none;
-  padding-top: 4rem;
-}
-
-.showMenu {
-  transform: translateY(0);
-}
-
-/* HAMBURGER LINES  ANIMATION*/
-
-.nav-container .hamburger-lines {
-  display: block;
-  height: 26px;
-  width: 32px;
-  position: absolute;
-  top: 17px;
-  left: 20px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.nav-container .hamburger-lines .line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: #0e2431;
-}
-
-.nav-container .hamburger-lines .line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
-}
-
-.nav-container .hamburger-lines .line2 {
-  transition: transform 0.2s ease-in-out;
-}
-
-.nav-container .hamburger-lines .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-}
-
-/* desktop-screen */
-@media screen and (min-width: 1024px) {
-  body {
-    background-color: cornflowerblue;
-  }
-  .hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 10rem;
-  }
-
-  .new-collection,
-  .offer {
-    background-color: bisque;
-    width: 50%;
-    height: 30rem;
-    padding: 3rem;
-  }
-
-<<<<<<< HEAD
-  .mood {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
-    margin-top: 10rem;
-    padding: 3rem;
-=======
-  .menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.5s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    /* background: black; */
-    color: rgb(0, 0, 0);
-    list-style: none;
-    padding-top: 4rem;
->>>>>>> 8f433b78169148d9d8105a508995fa92e08bd00b
-  }
-
-  .new-releases {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 2rem;
-    margin: 4rem;
-  }
-
-  .jewelry img,
-  .slippers img,
-  .kaftan img {
-    width: 100%;
-  }
-  .release-text {
-    width: 40%;
-    align-self: flex-start;
-  }
-
-  .packaging {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    background-color: bisque;
-    padding-top: 3rem;
-    height: 30rem;
-  }
 }
