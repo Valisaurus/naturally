@@ -1,0 +1,30 @@
+:root {
+  --main-color: rgb(251, 196, 129);
+    /* --nav-color: brown;
+    --accent-color: lightgreen;  */
+
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-offer-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mood-offer {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.check-box-text {
+  font-size: 0.7rem;
+}

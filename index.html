@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="fontsandcolors.css" />
     <title>Naturally</title>
   </head>
 
   <body>
     <header>
+            <!-- NAVBAR  -->
       <nav>
-        <ul class="menu">
+        <!-- <ul class="menu">
           <li><a class="menuItem" href="#">Home</a></li>
           <li><a class="menuItem" href="#">Profile</a></li>
           <li><a class="menuItem" href="#">About</a></li>
           <li><a class="menuItem" href="#">Contacts</a></li>
         </ul>
-        <button class="hamburger">
+        <button class="hamburger"> -->
           <!-- material icons https://material.io/resources/icons/ -->
-          <div class="hamburger-lines">
+          <!-- <div class="hamburger-lines">
             <i class="menuIcon material-icons"
               ><span class="line line1"></span
             ></i>
@@ -29,95 +31,103 @@
 
             <span class="line line1"></span>
             <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-        </button>
+            <span class="line line3"></span> -->
+          <!-- </div>
+        </button> -->
       </nav>
     </header>
+    
     <main>
+      <!-- HERO  -->
       <section class="hero">
+        <!-- <img src="/images/Rectangle_9.png" alt=""/> -->
         <div class="new-collection">
-          <p>NY KOLLEKTION</p>
-          <h1>Naturally Sommar Bär. Naturligtvis!</h1>
-          <hr />
+          <h2>NY KOLLEKTION</h2>
+        
+          <h1>
+            <span class="heading-1">Naturally</span>
+            <span class="heading-1">Kollektion.</span class="heading-1">
+            <span>Naturligtvis!</span>
+          </h1>
         </div>
+        </div>
+        <div class="hero-offer">
+          <span class="hero-offer-heading">Erbjudande - Få 50%</span>
+          <span class="hero-offer-heading">Rabatt Vid Lansering!</span>           
+          <div class="email-signup">
+            <form>
+              <input class="text-field" type="email" name="email" placeholder="Skriv in din e-post"/>
+            </form>
 
-        <div class="offer">
-          <h2>Erbjudande - Få 50% Rabatt Vid Lansering!</h2>
+            <div class="checkbox-info">
+              <input  type="checkbox" name="info-agree"/>
+              <label for="info-agree">
+              <span class="check-box-text">Skicka mig information om nya produkter och tjänster, erbjudanden
+              eller rekommendationer</span>
+              </label>
+            </div>
 
-          <form>
-            <input
-              type="email"
-              name="email"
-              placeholder="Skriv in din e-post"
-            />
-          </form>
-
-          <input type="checkbox" name="info-agree" /><label for="info-agree"
-            >Skicka mig information om nya produkter och tjänster, erbjudanden
-            eller rekommendationer</label
-          >
-
-          <button type="submit" name="discount-button">Skicka Rabattkod</button>
+            <button type="submit" name="discount-button">Skicka Rabattkod</button>
+          </div>
         </div>
       </section>
-
+    
+      <!-- EXPLORE -->
       <section class="explore">
+        <h2>UTFORSKA KOLLEKTIONEN</h2>
         <div class="collection">
-          <img src="images/matisse.jpeg" alt="collection-image" />
+          <img src="images/Group_90.png" alt="collection-image" />
         </div>
       </section>
-
+      <!-- NEW RELEASES -->
       <section class="new-releases">
-        <div class="release-text">
-          <h3>Innehåll med framtiden i siktet</h3>
+        <div class="new-releases-text">
+          <h2>Innehåll med framtiden i siktet</h2>
           <p>
             Vi vill ju tänka på framtiden så innehållet är helt ekologiskt, så
             klart, och vi testar inget på djur eller andra konstigheter. Allt är
             ju naturligt. Precis som hela vårt sortiment.
           </p>
         </div>
-
+      <!-- PRODUCT IMAGES X 3-->
         <div class="kaftan">
-          <img src="images/matisse.jpeg" />
-          <p>RUBIN YARD KAFTAN</p>
+          <img src="images/Rectangle_18.png" />
+          <p class="image-text">RUBIN YARD KAFTAN</p>
         </div>
 
         <div class="jewelry">
-          <img src="images/matisse.jpeg" />
-          <p>RUBIN YARD SMYCKE</p>
+          <!-- <img src="images/matisse.jpeg" /> -->
+          <div class="product-image-landscape"></div>
+          <p class="image-text"></p>RUBIN YARD SMYCKE</p>
         </div>
 
         <div class="slippers">
-          <img src="images/matisse.jpeg" />
-          <p>RUBIN YARD TOFFLOR</p>
+          <img src="images/Rectangle_20.png" />
+          <p class="image-text"></p>RUBIN YARD TOFFLOR</p>
         </div>
       </section>
-
+      <!-- MOOD (OFFER & PACKAGING) -->
       <section class="mood">
-        <div class="offer">
-          <h2>Erbjudande - Få 50% Rabatt Vid Lansering!</h2>
-
-          <form>
-            <input
-              type="email"
-              name="email"
-              placeholder="Skriv in din e-post"
-            />
-          </form>
-
-          <input type="checkbox" name="info-agree" /><label for="info-agree"
-            >Skicka mig information om nya produkter och tjänster, erbjudanden
-            eller rekommendationer</label
-          >
-
-          <button type="submit" name="discount-button">Skicka Rabattkod</button>
-        </div>
         <div class="packaging">
           <img src="images/matisse.jpeg" alt="packaging" />
         </div>
+        <div class="offer">
+          <span class="mood-offer">
+            Naturally Kollektion <br>
+            Naturligtvis!</span>
+          <form>
+            <input class="text-field" type="email" name="email" placeholder="Skriv in din e-post"/>
+          </form>
+          <input type="checkbox" name="info-agree" />
+            <label for="info-agree">
+              <span class="check-box-text">Skicka mig information om nya produkter och tjänster, erbjudandeneller rekommendationer</span>
+          </label>
+          <button type="submit" name="discount-button">
+            Skicka Rabattkod
+          </button>
+        </div>
       </section>
-
+      <!-- FOOTER  -->
       <footer>
         <div class="footer-container">
           <div class="about">
