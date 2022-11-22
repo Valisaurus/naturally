@@ -37,7 +37,7 @@ nav {
   width: 100%;
   height: auto;
   object-fit: fill;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 h1 {
