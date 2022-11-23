@@ -48,21 +48,22 @@ ul {
   height: auto;
 }
 
-/* HERO CONNTENT */
+/* HERO CONTENT */
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+}
 .hero {
   display: flex;
+  flex-direction: column;
   background-image: url("images/Rectangle_9.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  flex-direction: column;
   margin: 6rem 1rem 4rem 1rem;
   padding: 5rem 3rem 3rem 3rem;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  max-width: 1400px;
-  align-self: center;
-  /* margin: 6rem 3rem 6rem 3rem; */
-  /* align-items: center; */
 }
 
 .hero img {
@@ -72,10 +73,39 @@ ul {
   /* z-index: 1; */
 }
 
+.hero-offer-heading {
+  font-family: "Neue Haas Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 450;
+}
+
+.text-field {
+  font-family: "Neue Haas Grotesk", sans-serif;
+  font-size: 1rem;
+}
+
+.check-box-text {
+  font-family: "Neue Haas Grotesk", sans-serif;
+  font-size: 0.7rem;
+}
+
+button {
+  font-family: "Neue Haas Grotesk", sans-serif;
+}
+
 h1 {
   display: flex;
   flex-direction: column;
   margin-top: 0;
+  font-family: "Neue Haas Grotesk", sans-serif;
+  font-size: 3rem;
+  font-weight: 450;
+}
+
+.new-collection h2 {
+  font-family: "Arsenica light", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .new-collection {
@@ -156,14 +186,21 @@ button {
 }
 
 /* MOOD */
+.mood-container {
+  display: flex;
+  justify-content: center;
+}
+
 .mood {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 6rem 2rem 4rem 2rem;
   padding: 3rem;
-  background-color: bisque;
-  max-width: 100%;
+  background-image: url("/images/Rectangle_9.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -172,7 +209,6 @@ button {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* background-color: bisque; */
   padding-top: 3rem;
 }
 

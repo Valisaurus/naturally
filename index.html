@@ -67,10 +67,10 @@
     
     <main>
       <!-- HERO  -->
-      <section class="hero">
-        <!-- <img src="/images/Rectangle_9.png" alt=""/> -->
+<section class="hero-container">
+      <div class="hero">
         <div class="new-collection">
-          <h2>NY KOLLEKTION</h2>
+          <h2>Ny kollektion,</h2>
         
           <h1>
             <span class="heading-1">Naturally</span>
@@ -78,7 +78,7 @@
             <span class="heading-1">Naturligtvis!</span>
           </h1>
         </div>
-        </div>
+        
         <div class="hero-offer">
           <span class="hero-offer-heading">Erbjudande - Få 50%</span>
           <span class="hero-offer-heading">Rabatt Vid Lansering!</span>           
@@ -98,7 +98,8 @@
             <button type="submit" name="discount-button">Skicka Rabattkod</button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     
       <!-- EXPLORE -->
       <section class="explore">
@@ -137,26 +138,42 @@
       <!-- MOOD (OFFER & PACKAGING) -->
 
     <div><h3>HÅLLBART</h3></div>
-      <section class="mood">
-        <div class="packaging">
-          <img src="images/matisse.jpeg" alt="packaging" />
+    <section class="mood-container">
+    <div class="mood">
+      <div class="packaging">
+        <div class="packaging-image">
+          <img src="/images/Rectangle_9.png" alt="packaging" />
         </div>
-        <div class="offer">
-          <span class="mood-offer">
-            Naturally Kollektion <br>
-            Naturligtvis!</span>
+        <div>
+          <h2>Naturally Kollektion. Naturligtvis!</h2>
+        </div>
+    
+        <div class="email-signup">
           <form>
-            <input class="text-field" type="email" name="email" placeholder="Skriv in din e-post"/>
+            <input
+              class="text-field"
+              type="email"
+              name="email"
+              placeholder="Skriv in din e-post"
+            />
           </form>
-          <input type="checkbox" name="info-agree" />
+    
+          <div class="checkbox-info">
+            <input type="checkbox" name="info-agree" />
             <label for="info-agree">
-              <span class="check-box-text">Skicka mig information om nya produkter och tjänster, erbjudandeneller rekommendationer</span>
-          </label>
-          <button type="submit" name="discount-button">
-            Skicka Rabattkod
-          </button>
+              <span class="check-box-text"
+                >Skicka mig information om nya produkter och tjänster, erbjudanden
+                eller rekommendationer</span
+              >
+            </label>
+          </div>
+          <button type="submit" name="discount-button">Skicka Rabattkod</button>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
+
+    
       <!-- FOOTER  -->
       <footer>
         <div class="footer-container">
@@ -179,6 +196,7 @@
           </div>
      
         </div>
+  
           <div class="logo-footer">
           <a href="index.html">
             <img src="/images/LOGGA.png" alt="logo"/>
