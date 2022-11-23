@@ -1,19 +1,20 @@
-:root {
-  --main-color: rgb(251, 196, 129);
-  /* --nav-color: brown;
-    --accent-color: lightgreen;  */
+
+@font-face {
+  font-family: "Arsenica-light";
+  src:  url("./fonts/arsenica_light/ArsenicaTrial-LightItalic.woff") format("woff"),
+        url("./fonts/arsenica_light/ArsenicaTrial-LightItalic.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Arsenica light";
-  src: url("/fonts/arsenica_light/ArsenicaTrial-LightItalic.woff")
-      format("woff"),
-    url("/fonts/arsenica_light/ArsenicaTrial-LightItalic.woff2") format("woff2");
+  font-family: "Neue-Haas-Grotesk";
+
+  src:  url("./fonts/grotesk/NHaasGroteskDSStd-55Rg.woff") format("woff"),
+        url("./fonts/grotesk/NHaasGroteskDSStd-55Rg.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Neue Haas Grotesk";
+  font-family: "Neue-Haas-Grotesk-Medium";
 
-  src: url("/fonts/grotesk/NHaasGroteskDSStd-55Rg.woff") format("woff"),
-    url("/fonts/grotesk/NHaasGroteskDSStd-55Rg.woff2") format("woff2");
+  src:  url("./fonts/grotesk/NHaasGroteskDSPro-65Md.woff") format("woff"),
+        url("./fonts/grotesk/NHaasGroteskDSPro-65Md.woff2") format("woff2");
 }

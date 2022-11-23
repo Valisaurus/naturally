@@ -11,7 +11,11 @@
   .hero-offer-heading {
     font-size: 2.5rem;
   }
-
+  
+  .explore h2 {
+    margin-left: 3rem;
+  }
+  
   .footer-container {
     display: flex;
     flex-direction: row;
@@ -31,6 +35,7 @@
   .logo-footer {
     padding: 3rem;
   }
+
 }
 
 /* desktop-screen */
@@ -59,6 +64,10 @@
   .hero-offer {
     /* padding-top: 8rem;
     max-width: 20rem; */
+  }
+
+  .check-box-text {
+    font-size: 0.8rem;
   }
 
   .heading-1 {
