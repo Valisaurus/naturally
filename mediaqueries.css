@@ -1,177 +1,162 @@
-/* tablet-screen*/
-@media screen and (min-width: 700px) {
-  .email-signup {
-    max-width: 100%;
-  }
-
+/* __________TRANSITION-STAGE__________ */
+@media screen and (min-width: 500px) {
   .hero {
     margin: 6rem 3rem 4rem 3rem;
   }
-
+  .mood {
+    margin: 1rem 3rem 4rem 3rem;
+  }
+}
+/* __________TABLET__________ */
+@media screen and (min-width: 700px) {
+  /* Hero Offer */
   .hero-offer-heading {
     font-size: 2.5rem;
   }
-  
+  .email-signup {
+    max-width: 100%;
+  }
+  /*  NEW RELEASES  */
+  .first-h3 {
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+  }
+  .new-releases {
+    margin: 3rem 3rem 3rem 3rem;
+  }
+  .new-releases-text {
+    margin-top: 6rem;
+  }
+
+  /*  EXPLORE  */
   .explore h2 {
+    font-size: 1.5rem;
     margin-left: 3rem;
   }
-  
+
+  /* FOOTER */
+  footer {
+    padding: 3rem;
+  }
   .footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: center; */
-    width: 100%;
-    /* margin: 4rem; */
-    padding: 2rem;
-    flex-wrap: wrap;
   }
-  .about,
-  .client-service,
-  .social {
-    padding: 1rem;
-  }
-
-  .logo-footer {
-    padding: 3rem;
-  }
-
 }
 
-/* desktop-screen */
+/* __________ DESKTOP __________ */
 @media screen and (min-width: 900px) {
-  .email-signup {
-    max-width: 100%;
-  }
-
   .hero {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: auto;
-    /* padding: 4rem 6.75rem 0 6.75rem; */
-    height: 35rem;
-    /* background-color: bisque; */
+    width: 100%;
+    max-width: 90rem;
   }
-
+  .heading-1 {
+    font-size: 4rem;
+  }
+  .new-collection h2 {
+    font-size: 2rem;
+  }
   .new-collection,
   .hero-offer {
     width: 50%;
-    /* height: 35rem; */
     padding: 4rem;
   }
-
-  .hero-offer {
-    /* padding-top: 8rem;
-    max-width: 20rem; */
+  .email-signup {
+    max-width: 100%;
   }
-
   .check-box-text {
     font-size: 0.8rem;
   }
 
-  .heading-1 {
-    font-size: 4rem;
-  }
+  /*  NEW RELEASES  */
+  /* .explore {
+    position: relative;
+  } */
 
-  .mood {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
-    margin-top: 10rem;
-    padding: 3rem;
+  h3 {
+    font-size: 6rem;
   }
-
-  .collection img {
-    width: 100%;
-    margin-top: 0;
+  .first-h3 {
+    position: relative;
+    top: -5rem;
   }
-
-  /* .hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 10rem;
-  }
-
-  .new-collection,
-  .offer {
-    background-color: bisque;
-    width: 50%;
-    height: 30rem;
-    padding: 10rem;
-  }
-
-  .mood {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
-    margin-top: 10rem;
-    padding: 3rem;
-  }
-*/
   .new-releases {
+    margin-top: 20rem;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-gap: 3rem;
-    /* display: flex;   <--- flex-box
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 2rem;
-    margin: 4rem; */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    align-content: end;
+    grid-gap: 1.5rem;
   }
-
   .new-releases-text {
-    grid-column: 1 / 5;
-    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
   }
-
   .new-releases-text h2 {
     margin-top: 0;
   }
+  .image-text {
+    margin: 1rem;
+  }
 
+  /* PRODUCT-IMAGES */
   .kaftan {
-    grid-column: 1 / 7;
-    grid-row: 4 / 11;
-    align-self: end;
+    grid-column: 1 / 4;
+    grid-row: 2 / 7; 
   }
-
   .jewelry {
-    grid-column: 7 / 13;
-    grid-row: 1 / 6;
+    grid-column: 4 / 7;
+    grid-row: 1 / 4;
   }
-
   .slippers {
-    grid-column: 7 / 13;
-    grid-row: 6 / 11;
-    align-self: end;
+    grid-column: 4 / 7;
+    grid-row: 3 / 7;
   }
-
-  /*
-  .jewelry img,
-  .slippers img,
-  .kaftan img {
-    width: 100%;
+  /* MOOD */
+  .second-h3 {
+    margin-right: 3rem;
   }
-
-
-  .packaging {
+  .mood {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 50%;
-    background-color: bisque;
-    padding-top: 3rem;
-    height: 30rem;
+    width: 100%;
+    max-width: 90rem;
+    margin-top: 1rem;
+    /* padding: 3rem; */
   }
-} 
-*/
+  .mood-heading-and-signup {
+    margin-top: 4rem;
+    margin-right: 4rem;
+  }
+  .packaging-image {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 2;
+    order: 1;
+  }
+
+  .logo-footer {
+    flex-grow: 1;
+    margin: 0;
+  }
 }
