@@ -48,7 +48,6 @@ body {
   border: 0.1rem solid black;
   border-radius: 0.3rem;
   box-shadow: 3px 3px 10px 3px #88888829;
-
 }
 
 .hero img {
@@ -126,7 +125,7 @@ input[type="checkbox"] {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
-  border: 1rem solid black ;
+  border: 1rem solid black;
 }
 
 button {

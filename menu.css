@@ -63,7 +63,7 @@ a {
   transition: 0.7s ease;
 }
 .hamburger-link:hover {
-  color: blue;
+  color: var(--primary);
 }
 
 .hamburger-link {
@@ -119,4 +119,48 @@ a {
 .hamburger-menu.active {
   /* top: 0; */
   left: 0;
+}
+
+/* search-bar */
+.nav-item-search {
+  cursor: pointer;
+}
+
+.nav-item-search.hidden {
+  visibility: hidden;
+}
+/* li:active .nav-item-search path {
+  stroke: var(--primary);
+} */
+
+/* .search {
+  display: flex;
+  flex-direction: row;
+} */
+
+.search-bar {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.search-bar.active {
+  visibility: visible;
+  float: left;
+  height: auto;
+  width: auto;
+}
+input[type="text"].search-text {
+  background-color: aqua;
+  border: none;
+}
+
+.exit-button {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.exit-button.active {
+  visibility: visible;
+  width: auto;
+  height: auto;
 }

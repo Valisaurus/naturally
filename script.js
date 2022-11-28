@@ -15,3 +15,13 @@ document.querySelectorAll(".hamburger-link").forEach((n) =>
     hamburgerMenu.classList.remove("active");
   })
 );
+
+// SEARCHBAR
+
+const searchBar = document.querySelector(".search-bar");
+const searchIcon = document.querySelector(".nav-item-search");
+const exitButton = document.querySelector(".exit-button");
+
+searchIcon.addEventListener("click", () => {
+  searchBar.classList.toggle("active");
+});
