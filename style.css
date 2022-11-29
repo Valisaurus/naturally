@@ -42,11 +42,11 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin: 1rem 1rem 4rem 1rem;
-  padding: 5rem 3rem 3rem 3rem;
+  padding: 5rem 2rem 3rem 2rem;
   width: 100%;
   height: auto;
   border: 0.1rem solid black;
-  border-radius: 0.3rem;
+  /* border-radius: 0.3rem; */
   box-shadow: 3px 3px 10px 3px #88888829;
 }
 
@@ -96,13 +96,22 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+.heading-wrapper {
+  margin-bottom: 2rem;
+}
+
+.email-signup-prompt {
+  font-family: "Neue-Haas-Grotesk", sans-serif;
+  font-size: 1rem;
+}
+
 .text-field {
   background-color: var(--input);
   width: 100%;
   height: 3rem;
   font-family: "Neue-Haas-Grotesk", sans-serif;
   font-size: 1rem;
-  margin-top: 1.5rem;
+  border: 0.1rem solid black;
 }
 
 /* The checkbox-container */
@@ -212,11 +221,18 @@ h3 {
   letter-spacing: 2;
 }
 
-h2,
-.image-text {
+/* .new-releases-heading{
   font-family: "Neue-Haas-Grotesk-Medium", sans-serif;
   font-size: 1.25rem;
   letter-spacing: 0.01rem;
+  font-weight: 200;
+} */
+
+.new-releases-heading, .image-text {
+  font-family: "Neue-Haas-Grotesk-medium", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+  font-weight: 500;
 }
 
 /* ___ PRODUCT-IMAGES ___ */
@@ -272,7 +288,7 @@ h2,
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* margin: 4rem 1rem 4rem 1rem; */
-  padding: 4rem 3rem 3rem 3rem;
+  padding: 4rem 2rem 3rem 2rem;
   width: 100%;
   border: 0.1rem solid black;
   border-radius: 0.3rem;
