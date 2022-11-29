@@ -238,6 +238,17 @@ h2,
   width: 100%;
   height: auto;
 }
+/* IMAGE ANIMATION */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 /* _____________ MOOD _____________ */
 
@@ -257,7 +268,7 @@ h2,
 .mood {
   display: flex;
   flex-direction: column;
-  background-image: url("images/hero_img.jpg");
+  background-image: url("images/footer_img.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* margin: 4rem 1rem 4rem 1rem; */
