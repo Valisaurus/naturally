@@ -55,9 +55,9 @@
                 d="M16.163 9.622c0 4.504-3.319 8-7.229 8s-7.229-3.496-7.229-8c0-4.505 3.32-8 7.23-8 3.91 0 7.228 3.495 7.228 8Z"
               />
             </svg>
+
             <div class="search-bar">
-              <input class="search-text" type="text" placeholder="Search..">
-            
+              <input class="search-text" type="text" placeholder="  Sök">
             </div>
         
             <li>
@@ -116,34 +116,32 @@
       <section class="hero-container">
         <div class="hero">
           <div class="new-collection">
-            <h2>Ny kollektion,</h2>
+            <h2>NY KOLLEKTION,</h2>
             <h1>
-              <span class="heading-1">Naturally</span>
-              <span class="heading-1">Kollektion.</span>
+              <span class="heading-1">NATURALLY</span>
+              <span class="heading-1">GINKGO.</span>
               <span class="heading-1">Naturligtvis!</span>
             </h1>
           </div>
           <div class="hero-offer">
-            <span class="hero-offer-heading">Erbjudande - Få 50%</span>
-            <span class="hero-offer-heading">Rabatt Vid Lansering!</span>
+            <div class="heading-wrapper">
+              <span class="hero-offer-heading">Erbjudande – Få 50%</span>
+              <span class="hero-offer-heading">Rabatt Vid Lansering!</span>
+            </div>
             <div class="email-signup">
-              <form>
-                <input
-                  class="text-field"
-                  type="email"
-                  name="email"
-                  placeholder="Skriv in din e-post"
-                />
-              </form>
-              <div class="checkbox">
-                <input type="checkbox" name="info-agree" />
-                <label for="info-agree">
-                  <span class="check-box-text"
-                    >Skicka mig information om nya produkter och tjänster,
-                    erbjudanden eller rekommendationer</span
-                  >
-                </label>
-              </div>
+              <span class="email-signup-prompt">Skriv in din e-post</span>
+                <!-- <div class="field-container"> -->
+                  <input class="text-field" type="email" name="email" placeholder="  jane.doe@email.com"/>
+                <!-- </div> -->
+
+              <label class="checkbox-wrapper">
+                <input type="checkbox"/>
+                <span class="checkmark"></span> 
+                <div class="check-box-text">
+                  Skicka mig information om nya produkter och tjänster, erbjudanden eller rekommendationer
+                </div>
+              </label>
+          
               <button type="submit" name="discount-button">
                 Skicka Rabattkod
               </button>
@@ -153,7 +151,7 @@
       </section>
       <!---------- EXPLORE ---------->
       <section class="explore">
-        <h2>Utforska kollektionen</h2>
+        <h2>UTFORSKA KOLLEKTIONEN</h2>
         <div class="collection">
           <img src="images/Group_90.png" alt="collection-image" />
         </div>
@@ -164,7 +162,7 @@
       <!---------- NEW RELEASES ---------->
       <section class="new-releases">
         <div class="new-releases-text">
-          <h2>INNEHÅLL MED FRAMTIDEN I SIKTET</h2>
+          <h2 class="new-releases-heading">INNEHÅLL MED FRAMTIDEN I SIKTET</h2>
           <p>
             Vi vill ju tänka på framtiden så innehållet är helt ekologiskt, så
             klart, och vi testar inget på djur eller andra konstigheter. Allt är
@@ -179,36 +177,30 @@
           </p>
         </div>
         <!-- PRODUCT IMAGES X 3-->
-        <div class="kaftan">
+        <div class="kaftan reveal">
           <img src="images/Rectangle_18.png" />
-          <p class="image-text">RUBIN YARD KAFTAN</p>
+          <p class="image-text">GINKGO KAFTAN</p>
         </div>
 
-        <div class="jewelry">
+        <div class="jewelry reveal">
           <img src="images/Rectangle_20.png" />
-          <p class="image-text">RUBIN YARD SMYCKE</p>
+          <p class="image-text">GINKGO SMYCKE</p>
         </div>
 
-        <div class="slippers">
+        <div class="slippers reveal">
           <img src="images/Rectangle_20.png" />
-          <p class="image-text">RUBIN YARD TOFFLOR</p>
+          <p class="image-text">GINKGO SANDALER</p>
         </div>
       </section>
       <!---------- MOOD (OFFER & PACKAGING) ---------->
       <div class="second-h3">
         <h3>HÅLLBART</h3>
       </div>
-
       <section class="mood-container">
         <div class="mood">
-          <div class="packaging-image">
-            <!-- <img src="./images/mood_img.png" alt="packaging" /> -->
-          </div>
+          <div class="packaging-image"></div>
           <div class="mood-heading-and-signup">
-            <span class="heading-1"
-              >Naturally Kollektion.<br />
-              Naturligtvis!</span
-            >
+            <span class="heading-1">Naturally Ginkgo.</span>
             <div class="email-signup">
               <form>
                 <input
@@ -218,15 +210,13 @@
                   placeholder="Skriv in din e-post"
                 />
               </form>
-              <div class="checkbox">
-                <input type="checkbox" name="info-agree" />
-                <label for="info-agree">
-                  <span class="check-box-text"
-                    >Skicka mig information om nya produkter och tjänster,
-                    erbjudanden eller rekommendationer</span
-                  >
-                </label>
-              </div>
+              <label class="checkbox-wrapper">
+                <input type="checkbox"/>
+                <span class="checkmark"></span> 
+                <div class="check-box-text">
+                  Skicka mig information om nya produkter och tjänster, erbjudanden eller rekommendationer.
+                </div>
+              </label>
               <button type="submit" name="discount-button">
                 Skicka Rabattkod
               </button>

@@ -16,7 +16,7 @@ document.querySelectorAll(".hamburger-link").forEach((n) =>
   })
 );
 
-// SEARCHBAR
+/* SEARCHBAR */
 
 // const searchBar = document.querySelector(".search-bar");
 // const searchIcon = document.querySelector(".nav-item-search");
