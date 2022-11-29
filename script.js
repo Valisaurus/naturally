@@ -18,10 +18,14 @@ document.querySelectorAll(".hamburger-link").forEach((n) =>
 
 // SEARCHBAR
 
-const searchBar = document.querySelector(".search-bar");
-const searchIcon = document.querySelector(".nav-item-search");
-const exitButton = document.querySelector(".exit-button");
+// const searchBar = document.querySelector(".search-bar");
+// const searchIcon = document.querySelector(".nav-item-search");
+// const exitButton = document.querySelector(".exit-button");
 
-searchIcon.addEventListener("click", () => {
-  searchBar.classList.toggle("active");
-});
+// searchIcon.addEventListener("click", () => {
+//   searchBar.classList.toggle("active");
+// });
+
+
+
+const 
