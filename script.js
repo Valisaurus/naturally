@@ -26,7 +26,7 @@ searchIcon.addEventListener("click", () => {
   searchBar.classList.toggle("active");
 });
 
-/* IMAGE ANIMATION */
+/* IMAGE ANIMATION  */
 
 function reveal() {
   const reveals = document.querySelectorAll(".reveal")
