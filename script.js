@@ -24,12 +24,19 @@ const exitButton = document.querySelector(".exit-button");
 
 searchIcon.addEventListener("click", () => {
   searchBar.classList.toggle("active");
+  exitButton.classList.toggle("active");
+  searchIcon.classList.toggle("hidden");
+});
+exitButton.addEventListener("click", () => {
+  searchBar.classList.remove("active");
+  exitButton.classList.remove("active");
+  searchIcon.classList.remove("hidden");
 });
 
 /* IMAGE ANIMATION  */
 
 function reveal() {
-  const reveals = document.querySelectorAll(".reveal")
+  const reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
