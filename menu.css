@@ -53,6 +53,14 @@ a {
   gap: 4rem;
   font-family: "Neue-Haas-Grotesk", sans-serif;
   font-size: 1rem;
+  position: fixed;
+  left: -100%;
+  top: 3.5rem;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--bg);
+  width: 100%;
+  transition: 0.3s ease;
 }
 
 .hamburger-link {
@@ -73,10 +81,6 @@ a {
   display: block;
   cursor: pointer;
   padding-left: 1rem;
-}
-.hamburger-button {
-  width: 10rem;
-  height: 2rem;
 }
 
 .bar {
@@ -100,32 +104,36 @@ a {
 .hamburger-lines.active .bar:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
-.hamburger-menu {
-  position: fixed;
-  left: -100%;
-  top: 3.5rem;
-  gap: 0;
-  flex-direction: column;
-  background-color: var(--bg);
-  width: 100%;
-  /* text-align: center; */
-  transition: 0.3s ease;
-}
 
 .hamburger-item {
   display: flex;
   flex-direction: row;
-
   /* margin: 1rem 0; */
   /* width: auto;
   height: auto; */
 }
-.hamburger-item .login {
-  margin-top: 2rem;
+
+.hamburger-buttons {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding-left: 50%;
 }
-.hamburger-item .account {
-  margin-top: 2rem;
+.hamburger-button {
+  margin-bottom: 2rem;
+  width: 13rem;
+  height: 2rem;
+  cursor: pointer;
 }
+
+.hamburger-button {
+  transition: 0.7s ease;
+}
+.hamburger-button:hover {
+  color: var(--primary);
+}
+
 .hamburger-menu.active {
   /* display: flex;
   flex-direction: column; */
@@ -142,16 +150,21 @@ a {
   padding: 2rem;
   margin-top: 5rem;
 }
-/* search-bar */
+/* SEARCH BAR */
+
 .search {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
   /* align-items: center; */
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  will-change: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-left: 2.4rem;
 }
 .nav-item-search {
   cursor: pointer;
+  float: left;
 }
 
 .nav-item-search.hidden {
@@ -175,9 +188,10 @@ a {
 }
 .search-bar.active {
   visibility: visible;
-  float: left;
+  float: right;
   height: auto;
   width: auto;
+  padding-right: 1rem;
   /* transform: translateX(-10px); */
 }
 

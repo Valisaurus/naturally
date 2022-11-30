@@ -1,15 +1,5 @@
-/*ARRAY WITH MP4-VIDEOS */
-const videos = [
-  {
-    name: "kaftan",
-    video: "./videos/kaftananimation.512x560.mp4",
-  },
-  {
-    name: "slippers",
-    video: "./videos/Slipper_Anim_512x344.mp4",
-  },
-];
 /* CALLING FOR THE IMAGES AND THEN ADDING A VIDEO WHEN CLICKING ON THE IMAGE */
+
 // const kaftanDiv = document.querySelector(".kaftan");
 // const video = document.querySelector("kaftan-video");
 
@@ -55,6 +45,33 @@ const videos = [
 //   kaftanImg.classList.remove("active");
 
 //   kaftanImg.classList.toggle("active");
+// });
+
+// FETCHED FROM https://www.youtube.com/watch?v=ydeQbbF9jbw AND MODIFIED BY VALI
+
+const kaftanImg = document.querySelector(".kaftan-img");
+let toggle = true;
+kaftanImg.addEventListener("click", () => {
+  toggle = !toggle;
+  if (toggle) {
+    kaftanImg.src = "./images/kaftanbild.512x560.png";
+  } else {
+    kaftanImg.src = "./gifs/kaftananimation.512x560.gif";
+  }
+});
+
+// const kaftanDiv = document.querySelector(".kaftan");
+
+// const kaftanImg = document.querySelector(".kaftan-img");
+// const kaftanGif = document.querySelector(".kaftan-gif");
+
+// kaftanDiv.addEventListener("click", () => {
+//   kaftanGif.classList.toggle("active");
+//   kaftanImg.classList.remove("active");
+// });
+
+// kaftanGif.addEventListener("click", () => {
+//   kaftanGif.classList.remove("active");
 // });
 
 /* THIS PART IS FETCH FROM https://www.youtube.com/watch?v=flItyHiDm7E  AND MODIFIED BY VALI */

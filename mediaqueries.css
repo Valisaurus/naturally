@@ -9,7 +9,6 @@
 }
 /* __________TABLET__________ */
 @media screen and (min-width: 700px) {
-
   /* Hero Offer */
   .hero-offer-heading {
     font-size: 2.5rem;
@@ -36,6 +35,19 @@
   .explore h2 {
     font-size: 1.5rem;
     margin-left: 3rem;
+  }
+
+  /* MENU-BUTTONS */
+  .hamburger-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2.4rem;
+  }
+  .hamburger-button {
+    margin-top: 3rem;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
   }
 
   /* FOOTER */
@@ -78,7 +90,7 @@
   .new-collection,
   .hero-offer {
     width: 50%;
-    padding: 4rem;  
+    padding: 4rem;
   }
 
   .hero-offer-heading {
@@ -159,6 +171,18 @@
     margin-bottom: 0;
   }
 
+  /* MENU BUTTONS */
+  .hamburger-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2.4rem;
+  }
+  .hamburger-button {
+    margin-top: 3rem;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+  }
   /* FOOTER */
   footer {
     display: flex;
@@ -179,8 +203,8 @@
     flex-grow: 1;
     margin: 0;
   }
-  .logo-footer img{
+  .logo-footer img {
     width: 15rem;
-    height:auto;
+    height: auto;
   }
 }
