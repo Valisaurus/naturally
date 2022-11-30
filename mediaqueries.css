@@ -9,6 +9,7 @@
 }
 /* __________TABLET__________ */
 @media screen and (min-width: 700px) {
+
   /* Hero Offer */
   .hero-offer-heading {
     font-size: 2.5rem;
@@ -45,6 +46,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .footer-box {
+    text-align: left;
+  }
+  .logo-footer {
+    margin-top: 8rem;
+    text-align: left;
   }
 }
 
@@ -129,7 +137,7 @@
   }
   /* MOOD */
   .second-h3 {
-    margin-right: 3rem;
+    width: 70%;
   }
   .mood {
     display: flex;
@@ -156,6 +164,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 8rem;
   }
 
   .footer-container {
@@ -165,9 +174,12 @@
     flex: 2;
     order: 1;
   }
-
   .logo-footer {
     flex-grow: 1;
     margin: 0;
+  }
+  .logo-footer img{
+    width: 15rem;
+    height:auto;
   }
 }
