@@ -182,7 +182,7 @@ button {
 /* _____________ EXPLORE _____________ */
 
 .explore h2 {
-  font-family: "Arsenica-light";
+  font-family: "Neue-Haas-Grotesk", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.1rem;
   margin: 0rem 2rem 1rem 2rem;
@@ -219,6 +219,7 @@ h3 {
   font-size: 1.25rem;
   max-width: 40rem;
   letter-spacing: 2;
+  line-height: 1.6rem;
 }
 
 /* .new-releases-heading{
@@ -279,8 +280,15 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
+}
+
+.mood-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem 4rem 1rem;
+  
 }
 
 .mood {
@@ -288,9 +296,9 @@ h3 {
   flex-direction: column;
   background-image: url("images/footer_img.jpg");
   background-size: 100% 100%;
-  /* margin: 4rem 1rem 4rem 1rem; */
-  padding: 4rem 2rem 3rem 2rem;
+  padding: 5rem 2rem 3rem 2rem;
   width: 100%;
+  height: auto;
   border: 0.1rem solid black;
   border-radius: 0.3rem;
   box-shadow: 3px 3px 10px 3px #88888829;
@@ -298,12 +306,13 @@ h3 {
 
 .mood img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: fill;
 }
 
 .mood-container .heading-1 {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .packaging {
