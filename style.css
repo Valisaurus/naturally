@@ -126,7 +126,7 @@ h1 {
   user-select: none;
 }
 /* Hide the browser's default checkbox */
-.checkbox-wrapper input{
+.checkbox-wrapper input {
   opacity: 0;
   cursor: pointer;
   height: 0;
@@ -134,7 +134,7 @@ h1 {
 }
 
 /* Custom checkbox */
-.checkmark{
+.checkmark {
   background-color: var(--input);
   cursor: pointer;
   margin-right: 0.5rem;
@@ -213,7 +213,7 @@ h3 {
   margin: 3rem 1rem 3rem 1rem;
 }
 
-.new-releases-text  {
+.new-releases-text {
   font-family: "Neue-Haas-Grotesk-", sans-serif;
   font-weight: 100;
   font-size: 1.25rem;
@@ -229,7 +229,8 @@ h3 {
   font-weight: 200;
 } */
 
-.new-releases-heading, .image-text {
+.new-releases-heading,
+.image-text {
   font-family: "Neue-Haas-Grotesk-medium", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.01rem;
@@ -241,11 +242,24 @@ h3 {
   margin-bottom: 3rem;
   margin-top: 0.5rem;
 }
-.kaftan img {
+/* .kaftan img {
   width: 100%;
   height: auto;
-}
+} */
 
+/* .kaftan-video {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+} */
+.kaftan {
+  margin-bottom: 3rem;
+}
+.kaftan-video.active {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 .jewelry img {
   width: 100%;
   height: auto;
@@ -256,13 +270,13 @@ h3 {
   height: auto;
 }
 /* IMAGE ANIMATION */
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
@@ -288,7 +302,6 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 1rem 1rem 4rem 1rem;
-  
 }
 
 .mood {
@@ -323,7 +336,6 @@ h3 {
   padding-top: 3rem;
 }
 
-
 footer {
   width: 100%;
   margin-top: 5rem;
@@ -336,7 +348,6 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-
 }
 .footer-box {
   text-align: center;
@@ -354,7 +365,7 @@ h4 {
   text-align: center;
 }
 
-.logo-footer img{
+.logo-footer img {
   width: 10rem;
-  height:auto;
+  height: auto;
 }

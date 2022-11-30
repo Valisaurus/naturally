@@ -38,7 +38,7 @@
             </a>
           </li>
 
-          <li class="search">
+          <!-- <li class="search">
             <svg
               class="nav-item-search"
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@
               <path stroke="#000" stroke-width="2" d="m1 1 23 23M1 24 24 1" />
             </svg>
           </li>
-        </ul>
+        </ul> -->
 
         <div class="hamburger-container">
           <div class="hamburger-menu">
@@ -91,7 +91,43 @@
                 </li>
                 <li class="hamburger-item">
                   <a href="#" class="hamburger-link">KUNDSERVICE</a>
-                </li>
+
+                  <div class="search">
+                    <svg
+                      class="nav-item-search"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="26"
+                      fill="none"
+                    >
+                      <path
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M0-1h12.89"
+                        transform="scale(.9543 1.0437) rotate(45 -11.875 23.23)"
+                      />
+                      <path
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M16.163 9.622c0 4.504-3.319 8-7.229 8s-7.229-3.496-7.229-8c0-4.505 3.32-8 7.23-8 3.91 0 7.228 3.495 7.228 8Z"
+                      />
+                    </svg>
+                    <div class="search-bar">
+                      <input class="search-text" type="text" placeholder="  Sök" />
+                    </div>
+                    <svg
+                      class="exit-button"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="none"
+                    >
+                      <path stroke="#000" stroke-width="2" d="m1 1 23 23M1 24 24 1" />
+                    </svg>
+          
+                
+                  </div>
+
               </ul>
               <div class="hamburger-item">
                 <button class="hamburger-button login">LOGGA IN</button>
@@ -184,7 +220,26 @@
         </div>
         <!-- PRODUCT IMAGES X 3-->
         <div class="kaftan reveal">
-          <img src="./images/kaftanbild.512x560.png" />
+          <!-- <img
+            src="./images/kaftanbild.512x560.png"
+            alt="kaftan"
+            class="kaftan-img"
+          /> -->
+
+          <video
+            class="kaftan-video"
+            width="100%"
+            height="100%"
+            autoplay
+            loop
+            muted
+          >
+            <source
+              src="./videos/kaftananimation.512x560.mp4"
+              type="video/mp4"
+            />
+          </video>
+
           <p class="image-text">GINKGO KAFTAN</p>
         </div>
 
