@@ -49,27 +49,62 @@
 
 // FETCHED FROM https://www.youtube.com/watch?v=ydeQbbF9jbw AND MODIFIED BY VALI
 
-const kaftanImg = document.querySelector(".kaftan-img");
-let toggle = true;
-kaftanImg.addEventListener("click", () => {
-  toggle = !toggle;
-  if (toggle) {
-    kaftanImg.src = "./images/kaftanbild.640x688.png";
-  } else {
-    kaftanImg.src = "./gifs/kaftananimation.640x688.gif";
-  }
-});
+// const kaftanImg = document.querySelector(".kaftan-img");
+// let toggle = true;
+// kaftanImg.addEventListener("click", () => {
+//   toggle = !toggle;
+//   if (toggle) {
+//     kaftanImg.src = "./images/kaftanbild.640x688.png";
+//   } else {
+//     kaftanImg.src = "./gifs/kaftananimation.640x688.gif";
+//   }
+// });
 
-const slipperImg = document.querySelector(".slipper-img");
+// const slipperImg = document.querySelector(".slipper-img");
 
-slipperImg.addEventListener("click", () => {
-  toggle = !toggle;
-  if (toggle) {
-    slipperImg.src = "./images/Slipper_Final_640x432.jpg";
+// slipperImg.addEventListener("click", () => {
+//   toggle = !toggle;
+//   if (toggle) {
+//     slipperImg.src = "./images/Slipper_Final_640x432.jpg";
+//   } else {
+//     slipperImg.src = "./gifs/Slipper_Anim_640x432.gif";
+//   }
+// });
+
+const videoKaftan = document.querySelector(".kaftan video");
+const videoSrcKaftan = document.querySelector(".kaftan video source");
+
+const videoSlipper = document.querySelector(".slippers video");
+const videoSrcSlipper = document.querySelector(".slippers video source");
+
+const loadVideoKaftan = () => {
+  if (window.innerWidth < 700) {
+    videoSrcKaftan.src = "./videos/kaftananimation.512x560.mp4";
   } else {
-    slipperImg.src = "./gifs/Slipper_Anim_640x432.gif";
+    videoSrcKaftan.src = "./videos/kaftananimation.640x688 (1).mp4";
   }
-});
+  videoKaftan.load();
+  videoKaftan.play();
+};
+loadVideoKaftan();
+videoKaftan.addEventListener("click", loadVideoKaftan);
+
+const loadVideoSlipper = () => {
+  if (window.innerWidth < 700) {
+    videoSrcSlipper.src = "./videos/Slipper_Anim_512x344.mp4";
+  } else {
+    videoSrcSlipper.src = "./videos/Slipper_anim_ny_700x448.mp4";
+  }
+  videoSlipper.load();
+  videoSlipper.play();
+};
+videoSlipper.addEventListener("click", loadVideoSlipper);
+
+// videoSlipper.addEventListener("mouseleave", loadVideoSlipper, () => {});
+// videoSlipper.addEventListener("mouseleave", videoSrcSlipper.pause());
+
+// window.addEventListener("resize", loadVideoKaftan);
+// window.addEventListener("resize", loadVideoSlipper);
 
 // const kaftanDiv = document.querySelector(".kaftan");
 
