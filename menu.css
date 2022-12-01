@@ -39,31 +39,38 @@ ul {
 li {
   list-style: none;
 }
-a {
-  color: #000000;
-  text-decoration: none;
-}
+
 /* THIS PART IS FETCH FROM https://www.youtube.com/watch?v=flItyHiDm7E AND MODIFIED BY VALI */
 
+/* List with all menu-items */
 .hamburger-menu {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: flex-start;
-  /* padding-left: 3.5rem; */
-  gap: 4rem;
   font-family: "Neue-Haas-Grotesk", sans-serif;
   font-size: 1rem;
   position: fixed;
   left: -100%;
-  top: 3.5rem;
-  gap: 0;
-  flex-direction: column;
   background-color: var(--bg);
-  width: 100%;
-  transition: 0.3s ease;
+  /* width: 100%; */
+  transition: 0.7s ease;
+  width: 100vw;
+  height: 100vh;
 }
 
+/* Wraps all menu-items */
+.hamburger-menu-wrapper {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.7s ease;
+  margin: 2rem;
+}
+ul.hamburger-items {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding: 0;
+}
 .hamburger-link {
+  display: flex;
   transition: 0.7s ease;
   padding-top: 1rem;
 }
@@ -71,10 +78,67 @@ a {
   color: var(--primary);
 }
 
-.hamburger-link {
+/* Login and Account-buttons*/
+.hamburger-buttons {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.hamburger-button {
+  margin-bottom: 2rem;
+  width: 13rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.hamburger-button {
+  transition: 0.7s ease;
+}
+.hamburger-button:hover {
+  color: var(--primary);
+}
+
+/* Search-bar */
+.search {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  will-change: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /* padding-left: 2.4rem; */
 }
+.nav-item-search {
+  cursor: pointer;
+  float: left;
+  transition: translateX(20px);
+}
+.nav-item-search.hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.search-bar {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.search-bar.active {
+  visibility: visible;
+  /* float: right; */
+  height: auto;
+  width: auto;
+  padding-right: 1rem;
+}
+input[type="text"].search-text {
+  background-color: var(--input);
+  border: solid black 0.1px;
+  width: 100%;
+  height: 2rem;
+  font-family: "Neue-Haas-Grotesk", sans-serif;
+}
+
+/* Opens hamburger-menu */
 .hamburger-lines {
   width: 100%;
   height: 100%;
@@ -82,7 +146,6 @@ a {
   cursor: pointer;
   padding-left: 1rem;
 }
-
 .bar {
   display: block;
   width: 1.5rem;
@@ -92,117 +155,22 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: black;
 }
-
 .hamburger-lines.active .bar:nth-child(2) {
   opacity: 0;
 }
-/* translateY(7px) */
 .hamburger-lines.active .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
-/* translateY(-11px) */
 .hamburger-lines.active .bar:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
-
-.hamburger-item {
-  display: flex;
-  flex-direction: row;
-  /* margin: 1rem 0; */
-  /* width: auto;
-  height: auto; */
-}
-
-.hamburger-buttons {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
-  padding-left: 50%;
-}
-.hamburger-button {
-  margin-bottom: 2rem;
-  width: 13rem;
-  height: 2rem;
-  cursor: pointer;
-}
-
-.hamburger-button {
-  transition: 0.7s ease;
-}
-.hamburger-button:hover {
-  color: var(--primary);
-}
-
 .hamburger-menu.active {
-  /* display: flex;
-  flex-direction: column; */
   left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: absolute;
 }
-
-.hamburger-menu-items {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  margin-top: 5rem;
-}
-/* SEARCH BAR */
-
-.search {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* align-items: center; */
-  will-change: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding-left: 2.4rem;
-}
-.nav-item-search {
-  cursor: pointer;
-  float: left;
-}
-
-.nav-item-search.hidden {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-/* li:active .nav-item-search path {
-  stroke: var(--primary);
-} */
-
-/* .search {
-  display: flex;
-  flex-direction: row;
-} */
-
-.search-bar {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-.search-bar.active {
-  visibility: visible;
-  float: right;
-  height: auto;
-  width: auto;
-  padding-right: 1rem;
-  /* transform: translateX(-10px); */
-}
-
-input[type="text"].search-text {
-  background-color: var(--input);
-  border: solid black 0.1px;
-  width: 100%;
-  height: 2rem;
-  font-family: "Neue-Haas-Grotesk", sans-serif;
-}
-
 .exit-button {
   visibility: hidden;
   width: 0;

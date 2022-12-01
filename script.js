@@ -49,27 +49,57 @@
 
 // FETCHED FROM https://www.youtube.com/watch?v=ydeQbbF9jbw AND MODIFIED BY VALI
 
+/* KAFTAN TOGGLE */
 const kaftanImg = document.querySelector(".kaftan-img");
-let toggle = true;
-kaftanImg.addEventListener("click", () => {
-  toggle = !toggle;
-  if (toggle) {
-    kaftanImg.src = "./images/kaftanbild.640x688.png";
-  } else {
-    kaftanImg.src = "./gifs/kaftananimation.640x688.gif";
-  }
-});
+const kaftanGif = document.querySelector(".kaftan-gif");
 
+
+  kaftanImg.addEventListener("click", () => {
+    kaftanImg.classList.toggle("hidden");
+    kaftanGif.classList.toggle("active");
+  });
+
+  kaftanGif.addEventListener("click", () => {
+    kaftanImg.classList.remove("hidden");
+    kaftanGif.classList.remove("active");
+  });
+
+/* SLIPPER TOGGLE */
 const slipperImg = document.querySelector(".slipper-img");
+const slipperGif = document.querySelector(".slipper-gif");
 
-slipperImg.addEventListener("click", () => {
-  toggle = !toggle;
-  if (toggle) {
-    slipperImg.src = "./images/Slipper_Final_640x432.jpg";
-  } else {
-    slipperImg.src = "./gifs/Slipper_Anim_640x432.gif";
-  }
-});
+
+  slipperImg.addEventListener("click", () => {
+    slipperImg.classList.toggle("hidden");
+    slipperGif.classList.toggle("active");
+  });
+
+  slipperGif.addEventListener("click", () => {
+    slipperImg.classList.remove("hidden");
+    slipperGif.classList.remove("active");
+  });
+
+// const kaftanImg = document.querySelector(".kaftan-img");
+// let toggle = true;
+// kaftanImg.addEventListener("click", () => {
+//   toggle = !toggle;
+//   if (toggle) {
+//     kaftanImg.src = "./images/kaftanbild.640x688.png";
+//   } else {
+//     kaftanImg.src = "./gifs/kaftananimation.640x688.gif";
+//   }
+// });
+
+// const slipperImg = document.querySelector(".slipper-img");
+
+// slipperImg.addEventListener("click", () => {
+//   toggle = !toggle;
+//   if (toggle) {
+//     slipperImg.src = "./images/Slipper_Final_640x432.jpg";
+//   } else {
+//     slipperImg.src = "./gifs/Slipper_Anim_640x432.gif";
+//   }
+// });
 
 // const kaftanDiv = document.querySelector(".kaftan");
 
