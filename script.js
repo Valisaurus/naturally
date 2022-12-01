@@ -84,10 +84,13 @@ const loadVideoKaftan = () => {
     videoSrcKaftan.src = "./videos/kaftananimation.640x688 (1).mp4";
   }
   videoKaftan.load();
-  videoKaftan.play();
 };
+
 loadVideoKaftan();
-videoKaftan.addEventListener("click", loadVideoKaftan);
+
+videoKaftan.addEventListener("click", () => {
+  videoKaftan.play();
+});
 
 const loadVideoSlipper = () => {
   if (window.innerWidth < 700) {
@@ -96,29 +99,12 @@ const loadVideoSlipper = () => {
     videoSrcSlipper.src = "./videos/Slipper_anim_ny_700x448.mp4";
   }
   videoSlipper.load();
-  videoSlipper.play();
 };
-videoSlipper.addEventListener("click", loadVideoSlipper);
+loadVideoSlipper();
 
-// videoSlipper.addEventListener("mouseleave", loadVideoSlipper, () => {});
-// videoSlipper.addEventListener("mouseleave", videoSrcSlipper.pause());
-
-// window.addEventListener("resize", loadVideoKaftan);
-// window.addEventListener("resize", loadVideoSlipper);
-
-// const kaftanDiv = document.querySelector(".kaftan");
-
-// const kaftanImg = document.querySelector(".kaftan-img");
-// const kaftanGif = document.querySelector(".kaftan-gif");
-
-// kaftanDiv.addEventListener("click", () => {
-//   kaftanGif.classList.toggle("active");
-//   kaftanImg.classList.remove("active");
-// });
-
-// kaftanGif.addEventListener("click", () => {
-//   kaftanGif.classList.remove("active");
-// });
+videoSlipper.addEventListener("click", () => {
+  videoSlipper.play();
+});
 
 /* THIS PART IS FETCH FROM https://www.youtube.com/watch?v=flItyHiDm7E  AND MODIFIED BY VALI */
 
@@ -176,3 +162,23 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// videoSlipper.addEventListener("mouseleave", loadVideoSlipper, () => {});
+// videoSlipper.addEventListener("mouseleave", videoSrcSlipper.pause());
+
+// window.addEventListener("resize", loadVideoKaftan);
+// window.addEventListener("resize", loadVideoSlipper);
+
+// const kaftanDiv = document.querySelector(".kaftan");
+
+// const kaftanImg = document.querySelector(".kaftan-img");
+// const kaftanGif = document.querySelector(".kaftan-gif");
+
+// kaftanDiv.addEventListener("click", () => {
+//   kaftanGif.classList.toggle("active");
+//   kaftanImg.classList.remove("active");
+// });
+
+// kaftanGif.addEventListener("click", () => {
+//   kaftanGif.classList.remove("active");
+// });
