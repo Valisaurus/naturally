@@ -214,11 +214,3 @@ input[type="text"].search-text {
   height: auto;
   cursor: pointer;
 }
-
-/* __________TABLET__________ */
-@media screen and (min-width: 700px) {
-}
-
-/* __________ DESKTOP __________ */
-@media screen and (min-width: 900px) {
-}

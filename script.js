@@ -54,9 +54,20 @@ let toggle = true;
 kaftanImg.addEventListener("click", () => {
   toggle = !toggle;
   if (toggle) {
-    kaftanImg.src = "./images/kaftanbild.512x560.png";
+    kaftanImg.src = "./images/kaftanbild.640x688.png";
   } else {
-    kaftanImg.src = "./gifs/kaftananimation.512x560.gif";
+    kaftanImg.src = "./gifs/kaftananimation.640x688.gif";
+  }
+});
+
+const slipperImg = document.querySelector(".slipper-img");
+
+slipperImg.addEventListener("click", () => {
+  toggle = !toggle;
+  if (toggle) {
+    slipperImg.src = "./images/Slipper_Final_640x432.jpg";
+  } else {
+    slipperImg.src = "./gifs/Slipper_Anim_640x432.gif";
   }
 });
 

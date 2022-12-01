@@ -197,8 +197,15 @@
         <h2>UTFORSKA KOLLEKTIONEN</h2>
         <div class="collection">
           <img
-            src="./images/stämningsbild.576x464.png"
+            src="./images/hero.576x464.png"
             alt="collection-image"
+            srcset="
+              ./images/hero.576x464.png    576w,
+              ./images/hero.768x624.png    768w,
+              ./images/hero.1400x640_.png 1400w
+            "
+            sizes="(max-width:300px) 576px, 
+          (max-width:600px) 768px, 1400px"
           />
         </div>
         <div class="first-h3">
@@ -225,7 +232,7 @@
         <!-- PRODUCT IMAGES X 3-->
         <div class="kaftan reveal">
           <img
-            src="./images/kaftanbild.512x560.png"
+            src="./images/kaftanbild.640x688.png"
             alt="kaftan"
             class="kaftan-img"
           />
@@ -250,12 +257,26 @@
         </div>
 
         <div class="jewelry reveal">
-          <img src="./images/Smycken_512x344.jpg" />
+          <img
+            src="./images/Smycken_512x344.jpg"
+            alt="collection-image"
+            srcset="
+              ./images/Smycken_512x344.jpg   512w,
+              ./images/Smycken_700x473.jpg   700w,
+              ./images/Smycken_1000x675.jpg 1000w
+            "
+            sizes="(max-width:300px) 576px, 
+          (max-width:600px) 768px, 1000px"
+          />
           <p class="image-text">GINKGO SMYCKE</p>
         </div>
 
         <div class="slippers reveal">
-          <img src="./images/Slipper_Final_512x344.jpg" />
+          <img
+            src="./images/Slipper_Final_640x432.jpg"
+            alt="slipper"
+            class="slipper-img"
+          />
           <p class="image-text">GINKGO SANDALER</p>
         </div>
       </section>
