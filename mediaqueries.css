@@ -28,9 +28,9 @@
   .new-releases {
     margin: 3rem 3rem 3rem 3rem;
   }
-  .new-releases-text {
+  /* .new-releases-text {
     margin-top: 6rem;
-  }
+  } */
 
   /*  EXPLORE  */
   .explore h2 {
@@ -104,19 +104,27 @@
     top: -5rem;
   }
   .new-releases {
-    margin-top: 20rem;
+    margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    align-content: end;
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: repeat(6fr);
+    /* align-content: end; */
     grid-gap: 1.5rem;
   }
   .new-releases-text {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .new-releases-text h2 {
     margin-top: 0;
+  }
+  .new-releases-text {
+    font-size: 0.8rem;
   }
   .image-text {
     margin: 1rem;
@@ -124,17 +132,24 @@
 
   /* PRODUCT-IMAGES */
   .kaftan {
-    grid-column: 1 / 4;
-    grid-row: 2 / 7;
-  }
-  .jewelry {
-    grid-column: 4 / 7;
-    grid-row: 2 / 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 7;
     align-self: end;
   }
+  .jewelry {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
   .slippers {
-    grid-column: 4 / 7;
-    grid-row: 4 / 7;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    align-self: end;
   }
   /* MOOD */
   .second-h3 {
