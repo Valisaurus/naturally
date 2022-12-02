@@ -78,10 +78,10 @@ const videoSlipper = document.querySelector(".slippers video");
 const videoSrcSlipper = document.querySelector(".slippers video source");
 
 const loadVideoKaftan = () => {
-  if (window.innerWidth < 700) {
+  if (window.innerWidth < 600) {
     videoSrcKaftan.src = "./videos/kaftananimation.512x560.mp4";
   } else {
-    videoSrcKaftan.src = "./videos/kaftananimation.640x688 (1).mp4";
+    videoSrcKaftan.src = "./videos/kaftan.animation.1248x1376.mp4";
   }
   videoKaftan.load();
 };
@@ -93,7 +93,7 @@ videoKaftan.addEventListener("click", () => {
 });
 
 const loadVideoSlipper = () => {
-  if (window.innerWidth < 700) {
+  if (window.innerWidth < 600) {
     videoSrcSlipper.src = "./videos/Slipper_Anim_512x344.mp4";
   } else {
     videoSrcSlipper.src = "./videos/Slipper_anim_ny_700x448.mp4";

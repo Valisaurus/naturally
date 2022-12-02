@@ -21,16 +21,10 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
   height: 4rem;
   padding: 2rem;
   border-bottom: 0.1rem solid black;
 }
-
-/* .nav-item-languages .nav-item-search .nav-item-lines {
-  flex: 1; 
-  padding-left: 1rem;
-} */
 
 ul {
   list-style-type: none;
@@ -41,6 +35,55 @@ li {
 }
 
 /* THIS PART IS FETCH FROM https://www.youtube.com/watch?v=flItyHiDm7E AND MODIFIED BY VALI */
+
+/* Opens hamburger-menu */
+.hamburger-lines {
+  width: 100%;
+  height: 1.4rem;
+  display: block;
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.13rem;
+  margin: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(0, 0, 0);
+}
+.hamburger-lines.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-lines.active .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-lines.active .bar:nth-child(3) {
+  transform:  translateY(-10px) rotate(-45deg);
+}
+.hamburger-menu.active {
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+/* Close hamburger-menu */
+.exit-button {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.exit-button.active {
+  visibility: visible;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
 
 /* List with all menu-items */
 .hamburger-menu {
@@ -60,15 +103,19 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.7s ease;
-  margin: 2rem;
+  margin-top: 10rem;
 }
-ul.hamburger-items {
-  width: 100%;
+
+.hamburger-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:13rem;
   height: auto;
-  justify-content: center;
+  margin: 0;
   padding: 0;
 }
+
 .hamburger-link {
   display: flex;
   transition: 0.7s ease;
@@ -90,6 +137,7 @@ ul.hamburger-items {
   height: 2rem;
   cursor: pointer;
 }
+
 .hamburger-button {
   transition: 0.7s ease;
 }
@@ -101,17 +149,16 @@ ul.hamburger-items {
 .search {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
   will-change: 100%;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  /* padding-left: 2.4rem; */
+  margin-left: 0;
 }
+
 .nav-item-search {
   cursor: pointer;
-  float: left;
-  transition: translateX(20px);
+  transform: translateX(80px); 
 }
 .nav-item-search.hidden {
   visibility: hidden;
@@ -125,11 +172,10 @@ ul.hamburger-items {
 }
 .search-bar.active {
   visibility: visible;
-  /* float: right; */
   height: auto;
-  width: auto;
-  padding-right: 1rem;
+  width: 10.5rem;
 }
+
 input[type="text"].search-text {
   background-color: var(--input);
   border: solid black 0.1px;
@@ -138,47 +184,4 @@ input[type="text"].search-text {
   font-family: "Neue-Haas-Grotesk", sans-serif;
 }
 
-/* Opens hamburger-menu */
-.hamburger-lines {
-  width: 100%;
-  height: 100%;
-  display: block;
-  cursor: pointer;
-  padding-left: 1rem;
-}
-.bar {
-  display: block;
-  width: 1.5rem;
-  height: 0.1rem;
-  margin: 0.5rem auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: black;
-}
-.hamburger-lines.active .bar:nth-child(2) {
-  opacity: 0;
-}
-.hamburger-lines.active .bar:nth-child(1) {
-  transform: translateY(13px) rotate(45deg);
-}
-.hamburger-lines.active .bar:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
-}
-.hamburger-menu.active {
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: absolute;
-}
-.exit-button {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-.exit-button.active {
-  visibility: visible;
-  width: auto;
-  height: auto;
-  cursor: pointer;
-}
+

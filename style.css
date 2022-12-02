@@ -164,7 +164,7 @@ h1 {
 
 .check-box-text {
   font-family: "Neue-Haas-Grotesk", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 button {
@@ -210,7 +210,7 @@ h3 {
   height: 100%;
   display: grid;
   grid-template-columns: 1;
-  margin: 10rem 1rem 3rem 1rem;
+  margin: 8rem 1rem 3rem 1rem;
 }
 
 .new-releases-text {
@@ -221,13 +221,6 @@ h3 {
   letter-spacing: 2;
   line-height: 1.6rem;
 }
-
-/* .new-releases-heading{
-  font-family: "Neue-Haas-Grotesk-Medium", sans-serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.01rem;
-  font-weight: 200;
-} */
 
 .new-releases-heading,
 .image-text {
@@ -242,51 +235,13 @@ h3 {
   margin-bottom: 3rem;
   margin-top: 0.5rem;
 }
-/* Kaftan - Toggle between image and gif */
-.kaftan-img.active {
-  width: 100%;
-  height: auto;
-}
-.kaftan-img.hidden {
-  display: none;
-  width: 0;
-  height: 0;
-}
-.kaftan-gif {
-  display: none;
-  width: 0;
-  height: 0;
-}
-.kaftan-gif.active {
-  display: grid;
-  width: 100%;
-  height: auto;
-}
+
 /* Jewelry */
 .jewelry img {
   width: 100%;
   height: auto;
 }
-/* Slippers - Toggle between image and gif */
-.slipper-img.active {
-  width: 100%;
-  height: auto;
-}
-.slipper-img.hidden {
-  display: none;
-  width: 0;
-  height: 0;
-}
-.slipper-gif {
-  display: none;
-  width: 0;
-  height: 0;
-}
-.slipper-gif.active {
-  display: grid;
-  width: 100%;
-  height: auto;
-}
+
 /* IMAGE ANIMATION */
 .reveal {
   position: relative;
@@ -324,7 +279,7 @@ h3 {
 
 .mood {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-image: url("images/footer_img.jpg");
   background-size: 100% 100%;
   padding: 5rem 2rem 3rem 2rem;
@@ -341,17 +296,15 @@ h3 {
   object-fit: fill;
 }
 
-.mood-container .heading-1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.heading-offer-container {
+  margin-bottom: 4rem;
 }
 
-.packaging {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-top: 3rem;
+.heading-offer {
+  font-family: "Neue-Haas-Grotesk", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  /* margin-bottom: 1rem; */
 }
 
 footer {
